@@ -1,0 +1,7 @@
+red=(255,0,0);
+black=(0,0,0);
+
+repeat 6 {
+	become red in 10;
+	become black in 20;
+}

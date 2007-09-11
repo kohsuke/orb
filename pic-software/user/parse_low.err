@@ -1,0 +1,16 @@
+Error[1105] C:\kohsuke\My Projects\DIYOrb\pic-software\user\parse_low.c 30 : symbol 'g_error' has not been defined
+Error[1105] C:\kohsuke\My Projects\DIYOrb\pic-software\user\parse_low.c 35 : symbol 'input_buffer' has not been defined
+Error[1129] C:\kohsuke\My Projects\DIYOrb\pic-software\user\parse_low.c 35 : [] operator requires a pointer and an integer as operands
+Error[1105] C:\kohsuke\My Projects\DIYOrb\pic-software\user\parse_low.c 36 : symbol 'g_error' has not been defined
+Error[1101] C:\kohsuke\My Projects\DIYOrb\pic-software\user\parse_low.c 36 : lvalue required
+Error[1105] C:\kohsuke\My Projects\DIYOrb\pic-software\user\parse_low.c 43 : symbol 'input_buffer' has not been defined
+Error[1129] C:\kohsuke\My Projects\DIYOrb\pic-software\user\parse_low.c 43 : [] operator requires a pointer and an integer as operands
+Error[1105] C:\kohsuke\My Projects\DIYOrb\pic-software\user\parse_low.c 46 : symbol 'g_error' has not been defined
+Error[1101] C:\kohsuke\My Projects\DIYOrb\pic-software\user\parse_low.c 46 : lvalue required
+Error[1105] C:\kohsuke\My Projects\DIYOrb\pic-software\user\parse_low.c 59 : symbol 'input_buffer' has not been defined
+Error[1129] C:\kohsuke\My Projects\DIYOrb\pic-software\user\parse_low.c 59 : [] operator requires a pointer and an integer as operands
+Error[1105] C:\kohsuke\My Projects\DIYOrb\pic-software\user\parse_low.c 111 : symbol 'g_error' has not been defined
+Error[1105] C:\kohsuke\My Projects\DIYOrb\pic-software\user\parse_low.c 112 : symbol 'g_error' has not been defined
+Error[1101] C:\kohsuke\My Projects\DIYOrb\pic-software\user\parse_low.c 112 : lvalue required
+Error[1105] C:\kohsuke\My Projects\DIYOrb\pic-software\user\parse_low.c 134 : symbol 'input_buffer' has not been defined
+Error[1129] C:\kohsuke\My Projects\DIYOrb\pic-software\user\parse_low.c 134 : [] operator requires a pointer and an integer as operands

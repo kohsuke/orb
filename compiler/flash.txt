@@ -1,0 +1,4 @@
+repeat 60 {
+        become (  0,  0,255) in 10;
+        become (  0,  0,  0) in 10;
+}

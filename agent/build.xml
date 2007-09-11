@@ -1,0 +1,46 @@
+<project name="orb-agent" default="all" basedir=".">
+  <target name="props">
+    <property name="build.dir" value="build" />
+  </target>
+
+  <target name="clean">
+    <delete dir="${build.dir}"/>
+  </target>
+
+  <target name="compile">
+    <mkdir dir="${build.dir}"/>
+    <copy todir="${build.dir}">
+      <fileset dir="lib">
+        <include name="*.jar"/>
+      </fileset>
+    </copy>
+    <copy todir="${build.dir}/org/kohsuke/diyorb">
+      <fileset dir="src/org/kohsuke/diyorb">
+        <include name="*.txt"/>
+      </fileset>
+    </copy>
+    <javac
+            srcdir="src"
+            destdir="${build.dir}">
+      <classpath>
+        <fileset dir="${build.dir}">
+          <include name="*.jar"/>
+        </fileset>
+      </classpath>
+    </javac>
+    <manifestclasspath property="manifest.cp" jarfile="${build.dir}/Talk.jar">
+      <classpath>
+        <fileset dir="${build.dir}">
+          <include name="*.jar"/>
+        </fileset>
+      </classpath>
+    </manifestclasspath>
+    <jar destfile="${build.dir}/Talk.jar" basedir="${build.dir}" level="9">
+      <manifest>
+        <attribute name="Main-Class" value="org/kohsuke/diyorb/Talk"/>
+        <attribute name="Class-Path" value="${manifest.cp}"/>
+      </manifest>
+    </jar>
+  </target>
+  <target name="all" depends="props,clean,compile"/>
+</project>

@@ -1,0 +1,5 @@
+Warning[2054] C:\kohsuke\My Projects\DIYOrb\pic-software\user\parse.c 80 : suspicious pointer conversion
+Warning[2066] C:\kohsuke\My Projects\DIYOrb\pic-software\user\parse.c 80 : type qualifier mismatch in assignment
+Warning[2066] C:\kohsuke\My Projects\DIYOrb\pic-software\user\parse.c 99 : type qualifier mismatch in assignment
+Warning[2066] C:\kohsuke\My Projects\DIYOrb\pic-software\user\parse.c 103 : type qualifier mismatch in assignment
+Warning[2054] C:\kohsuke\My Projects\DIYOrb\pic-software\user\parse.c 109 : suspicious pointer conversion

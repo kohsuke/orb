@@ -1,0 +1,4 @@
+repeat {
+        become (255,  0,  0) in 1000;
+        become (  0,  0,  0) in 1000;
+}

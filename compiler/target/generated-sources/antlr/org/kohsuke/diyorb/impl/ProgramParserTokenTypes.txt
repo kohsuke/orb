@@ -1,0 +1,25 @@
+// $ANTLR 2.7.4: language.g -> ProgramParserTokenTypes.txt$
+ProgramParser    // output token vocab name
+TOKEN=4
+"="=5
+"("=6
+","=7
+")"=8
+";"=9
+"{"=10
+"}"=11
+LITERAL_repeat="repeat"=12
+LITERAL_become="become"=13
+LITERAL_in="in"=14
+NUMBER=15
+WS=16
+MINUS=17
+STAR=18
+DIV=19
+OR=20
+EQUAL=21
+LPAREN=22
+RPAREN=23
+SEMI=24
+LBRA=25
+RBRA=26

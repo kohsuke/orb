@@ -1,0 +1,27 @@
+<project name="orb-compiler" basedir="." default="all">
+  <target name="props">
+    <property name="build.dir" value="build"/>
+  </target>
+  <target name="clean">
+    <delete dir="${build.dir}"/>
+  </target>
+  <target name="compile">
+    <mkdir dir="${build.dir}"/>
+    <javac srcdir="src/main/java" destdir="${build.dir}">
+      <classpath>
+        <fileset dir="lib">
+          <include name="*.jar"/>
+        </fileset>
+      </classpath>
+    </javac>
+  </target>
+  <target name="package">
+    <copy tofile="build/lib">
+      <fileset dir="lib">
+        <include name="antlr-runtime*.jar"/>
+      </fileset>
+    </copy>
+    <jar destfile="${build.dir}/orb-compiler.jar" basedir="${build.dir}"/>
+  </target>
+  <target name="all" depends="props,clean,compile,package" />
+</project>

@@ -1,0 +1,46 @@
+Byte code design:
+
+struct Program {
+  // 0xFFFFFFFF : indicates the start of a new program
+  DWORD   magic;
+
+  // the total payload size to follow
+  WORD    length;
+
+  // byte code body
+  BYTE    bytecode[length];
+}
+
+bytecode:
+
+// command to change color
+struct Color {
+  4bit  opcode; // = 0
+  4bit  r;
+  4bit  g;
+  4bit  b;
+}
+
+// command to branch
+struct Loop {
+  4bit  opcode; // = 1
+
+  // when branch, subtract this from IP and that'll be the new IP.
+  12bit jumpOffset;
+
+  // execution engine will use this 8bit for counting
+  8bit  counter;
+
+  // stores the loop count
+  8bit  total;
+}
+
+struct Jump {
+  4bit  opcode; // = 2
+  12bit jumpOffset; // see above
+}
+
+struct Halt {
+  4bit  opcode; // = 3
+  4bit  unused;
+}
